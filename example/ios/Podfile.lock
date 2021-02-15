@@ -32,7 +32,7 @@ PODS:
   - GTMSessionFetcher/Core (1.7.0)
   - image_picker (0.0.1):
     - Flutter
-  - ml_kit_ocr (0.0.1):
+  - ml_kit_ocr (0.0.2):
     - Flutter
     - GoogleMLKit/TextRecognition (~> 2.2.0)
   - MLImage (1.0.0-beta1)
@@ -102,7 +102,7 @@ SPEC CHECKSUMS:
   GoogleUtilitiesComponents: 679b2c881db3b615a2777504623df6122dd20afe
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   image_picker: 0d37d1cb66231c2473a0e3ccb8d062d0c2b3d297
-  ml_kit_ocr: 30c58613357ab86923d1ab857285bd9c5ea29499
+  ml_kit_ocr: cd2690c56b4719bdf74f6c374e18fca66f05bfc9
   MLImage: 647f3d580c10b3c9a3f6154f5d7baead60c42a0c
   MLKitCommon: 6d6be0a2e9a6340aad1c1f2b9449c11dee8af70f
   MLKitTextRecognition: fd52b7b3cef00751c202475f5a147e9752130767

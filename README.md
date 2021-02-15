@@ -7,7 +7,8 @@ Plugin which provides native ML Kit OCR APIs
 **Android**
 - Set `minSdkVersion 21` in `android/app/build.gradle`
 - Set `ext.kotlin_version = '1.6.10'` in `android/build.gradle`
-
+- Add `<meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="ocr" />`  in  `android/src/main/AndroidManifest.xml`
+- Note: In case you are using multiple models separate them with commas `android:value="ocr,ica"`
 - *App size impact: 260KB*, refer [here](https://developers.google.com/ml-kit/vision/text-recognition/android)
 
 **iOS**
