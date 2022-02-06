@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'ml_kit_ocr'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Flutter Plugin for ML Kit ocr'
   s.description      = <<-DESC
 Flutter Plugin for ML Kit ocr.

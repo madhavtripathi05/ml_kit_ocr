@@ -6,11 +6,12 @@ Plugin which provides native ML Kit OCR APIs
 
 **Android**
 - Set `minSdkVersion 21` in `android/app/build.gradle`
+- Set `ext.kotlin_version = '1.6.10'` in `android/build.gradle`
 
 - *App size impact: 260KB*, refer [here](https://developers.google.com/ml-kit/vision/text-recognition/android)
 
 **iOS**
-- Minimum iOS Deployment Target: 12.0
+- Minimum iOS Deployment Target: 10.0
 - Xcode 12.5.1 or greater.
 - ML Kit only supports 64-bit architectures (x86_64 and arm64). Check this [list](https://developer.apple.com/support/required-device-capabilities/) to see if your device has the required device capabilities.
 - Since ML Kit does not support 32-bit architectures (i386 and armv7) [Read more](https://developers.google.com/ml-kit/migration/ios), you need to exclude amrv7 architectures in Xcode in order to build iOS
