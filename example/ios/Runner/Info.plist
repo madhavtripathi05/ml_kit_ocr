@@ -5,7 +5,7 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleDisplayName</key>
-		<string>Ml Kit Ocr</string>
+		<string>Example</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
-		<string>ml_kit_ocr_example</string>
+		<string>example</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
@@ -28,11 +28,11 @@
 		<string>LaunchScreen</string>
 		<key>UIMainStoryboardFile</key>
 		<string>Main</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>This App requires access to photos for performing OCR</string>
+		<key>NSCameraUsageDescription</key>
+		<string>This App requires access to camera for performing OCR</string>
 		<key>UISupportedInterfaceOrientations</key>
-		<string>NSPhotoLibraryUsageDescription</string>
-		<key>This app requires access to photos for OCR</key>
-		<string>NSCameraUsageDescription</string>
-		<key>This app requires access to camera for OCR</key>
 		<array>
 			<string>UIInterfaceOrientationPortrait</string>
 			<string>UIInterfaceOrientationLandscapeLeft</string>
