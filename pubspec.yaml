@@ -1,6 +1,6 @@
 name: ml_kit_ocr
-description: Flutter Plugin for ML Kit ocr.
-version: 0.0.2
+description: This is a Plugin which provides native ML Kit Optical Character Recognition API.
+version: 0.0.3+1
 homepage: https://github.com/madhavtripathi05/ml_kit_ocr
 
 environment:

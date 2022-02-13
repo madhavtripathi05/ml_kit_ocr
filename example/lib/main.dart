@@ -77,6 +77,7 @@ class _MyAppState extends State<MyApp> {
                         )
                       : ElevatedButton(
                           onPressed: () async {
+                            recognitions = '';
                             final ocr = MlKitOcr();
                             final stopwatch = Stopwatch()..start();
                             isProcessing = true;
@@ -86,7 +87,6 @@ class _MyAppState extends State<MyApp> {
                             timeElapsed =
                                 stopwatch.elapsedMilliseconds.toString();
                             isProcessing = false;
-                            recognitions = '';
                             stopwatch.reset();
                             stopwatch.stop();
                             for (var blocks in result.blocks) {
