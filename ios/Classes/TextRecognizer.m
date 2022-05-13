@@ -7,6 +7,11 @@
 
 #import "MlKitOcrPlugin.h"
 #import <MLKitTextRecognition/MLKitTextRecognition.h>
+#import <MLKitTextRecognitionCommon/MLKTextRecognizedLanguage.h>
+#import <MLKitTextRecognitionCommon/MLKText.h>
+#import <MLKitTextRecognitionCommon/MLKTextBlock.h>
+#import <MLKitTextRecognitionCommon/MLKTextLine.h>
+#import <MLKitTextRecognitionCommon/MLKTextElement.h>
 
 #define startTextDetector @"processImage"
 #define closeTextDetector @"closeDetector"

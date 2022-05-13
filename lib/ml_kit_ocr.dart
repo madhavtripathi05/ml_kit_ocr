@@ -23,8 +23,10 @@ class MlKitOcr {
   /// Function that takes [InputImage] processes it and returns a [RecognisedText] object.
   Future<RecognisedText> processImage(InputImage inputImage) async {
     _hasBeenOpened = true;
-    final result = await _channel.invokeMethod('processImage',
-        <String, dynamic>{'imageData': inputImage.getImageData()});
+    final result = await _channel.invokeMethod(
+      'processImage',
+      {'imageData': inputImage.getImageData()},
+    );
 
     final recognisedText = RecognisedText.fromMap(result);
 
@@ -66,8 +68,13 @@ class RecognisedText {
 
 /// Class that has a block or group of words present in part of image.
 class TextBlock {
-  TextBlock._(this.text, this.lines, this.rect, this.recognizedLanguages,
-      this.cornerPoints);
+  TextBlock._(
+    this.text,
+    this.lines,
+    this.rect,
+    this.recognizedLanguages,
+    this.cornerPoints,
+  );
 
   factory TextBlock.fromMap(Map<dynamic, dynamic> map) {
     final text = map['text'];

@@ -1,6 +1,6 @@
 name: ml_kit_ocr
 description: This is a Plugin which provides native ML Kit Optical Character Recognition API.
-version: 0.0.3+1
+version: 0.0.4+2
 homepage: https://github.com/madhavtripathi05/ml_kit_ocr
 
 environment:
@@ -14,7 +14,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
