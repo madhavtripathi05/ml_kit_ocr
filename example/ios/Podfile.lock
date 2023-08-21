@@ -1,14 +1,14 @@
 PODS:
   - Flutter (1.0.0)
-  - GoogleDataTransport (9.1.2):
-    - GoogleUtilities/Environment (~> 7.2)
-    - nanopb (~> 2.30908.0)
+  - GoogleDataTransport (9.2.3):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleMLKit/MLKitCore (2.2.0):
-    - MLKitCommon (~> 3.0.0)
-  - GoogleMLKit/TextRecognition (2.2.0):
+  - GoogleMLKit/MLKitCore (4.0.0):
+    - MLKitCommon (~> 9.0.0)
+  - GoogleMLKit/TextRecognition (4.0.0):
     - GoogleMLKit/MLKitCore
-    - MLKitTextRecognition (~> 1.3.0)
+    - MLKitTextRecognition (~> 2.0.0)
   - GoogleToolboxForMac/DebugUtils (2.3.2):
     - GoogleToolboxForMac/Defines (= 2.3.2)
   - GoogleToolboxForMac/Defines (2.3.2)
@@ -21,51 +21,52 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.3.2)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.2)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.3.2)"
-  - GoogleUtilities/Environment (7.7.0):
+  - GoogleUtilities/Environment (7.11.1):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.7.0):
+  - GoogleUtilities/Logger (7.11.1):
     - GoogleUtilities/Environment
-  - GoogleUtilities/UserDefaults (7.7.0):
+  - GoogleUtilities/UserDefaults (7.11.1):
     - GoogleUtilities/Logger
   - GoogleUtilitiesComponents (1.1.0):
     - GoogleUtilities/Logger
-  - GTMSessionFetcher/Core (1.7.0)
+  - GTMSessionFetcher/Core (2.3.0)
   - image_picker (0.0.1):
     - Flutter
-  - ml_kit_ocr (0.0.2):
+  - ml_kit_ocr (0.0.4):
     - Flutter
-    - GoogleMLKit/TextRecognition (~> 2.2.0)
-  - MLImage (1.0.0-beta1)
-  - MLKitCommon (3.0.0):
+    - GoogleMLKit/TextRecognition (= 4.0.0)
+  - MLImage (1.0.0-beta4)
+  - MLKitCommon (9.0.0):
     - GoogleDataTransport (~> 9.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - GoogleUtilities/UserDefaults (~> 7.0)
     - GoogleUtilitiesComponents (~> 1.0)
-    - GTMSessionFetcher/Core (~> 1.1)
-    - Protobuf (~> 3.12)
-  - MLKitTextRecognition (1.3.0):
-    - MLKitCommon (~> 3.0)
-    - MLKitVision (~> 1.3)
-  - MLKitVision (1.3.0):
+    - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+  - MLKitTextRecognition (2.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitTextRecognitionCommon (= 1.0.0)
+    - MLKitVision (~> 5.0)
+  - MLKitTextRecognitionCommon (1.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitVision (~> 5.0)
+  - MLKitVision (5.0.0):
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-    - GTMSessionFetcher/Core (~> 1.1)
-    - MLImage (= 1.0.0-beta1)
-    - MLKitCommon (~> 3.0)
-    - Protobuf (~> 3.12)
-  - nanopb (2.30908.0):
-    - nanopb/decode (= 2.30908.0)
-    - nanopb/encode (= 2.30908.0)
-  - nanopb/decode (2.30908.0)
-  - nanopb/encode (2.30908.0)
-  - PromisesObjC (2.0.0)
-  - Protobuf (3.19.1)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+    - MLImage (= 1.0.0-beta4)
+    - MLKitCommon (~> 9.0)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.2.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - GoogleMLKit/TextRecognition (= 2.2.0)
+  - GoogleMLKit/TextRecognition (= 4.0.0)
   - image_picker (from `.symlinks/plugins/image_picker/ios`)
   - ml_kit_ocr (from `.symlinks/plugins/ml_kit_ocr/ios`)
 
@@ -80,10 +81,10 @@ SPEC REPOS:
     - MLImage
     - MLKitCommon
     - MLKitTextRecognition
+    - MLKitTextRecognitionCommon
     - MLKitVision
     - nanopb
     - PromisesObjC
-    - Protobuf
 
 EXTERNAL SOURCES:
   Flutter:
@@ -94,23 +95,23 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/ml_kit_ocr/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
-  GoogleMLKit: 85ffdc9641d05311c76dbba5bbf93059087be12f
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  GoogleDataTransport: f0308f5905a745f94fb91fea9c6cbaf3831cb1bd
+  GoogleMLKit: 2bd0dc6253c4d4f227aad460f69215a504b2980e
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
-  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GoogleUtilities: 9aa0ad5a7bc171f8bae016300bfcfa3fb8425749
   GoogleUtilitiesComponents: 679b2c881db3b615a2777504623df6122dd20afe
-  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
+  GTMSessionFetcher: 3a63d75eecd6aa32c2fc79f578064e1214dfdec2
   image_picker: 0d37d1cb66231c2473a0e3ccb8d062d0c2b3d297
-  ml_kit_ocr: cd2690c56b4719bdf74f6c374e18fca66f05bfc9
-  MLImage: 647f3d580c10b3c9a3f6154f5d7baead60c42a0c
-  MLKitCommon: 6d6be0a2e9a6340aad1c1f2b9449c11dee8af70f
-  MLKitTextRecognition: fd52b7b3cef00751c202475f5a147e9752130767
-  MLKitVision: 26da299aef93291f24f5200e8372919f73abf3b5
-  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  Protobuf: 3724efa50cb2846d7ccebc8691c574e85fd74471
+  ml_kit_ocr: 3e1d6ff955a94c9c947c8973c340a76d54e5a780
+  MLImage: 7bb7c4264164ade9bf64f679b40fb29c8f33ee9b
+  MLKitCommon: c1b791c3e667091918d91bda4bba69a91011e390
+  MLKitTextRecognition: 9ff0c843f2723d31d4bdd0c0d17a0a18382ed23e
+  MLKitTextRecognitionCommon: 0d48930fee25cce9d52d0ba217490d4797061aa2
+  MLKitVision: 8baa5f46ee3352614169b85250574fde38c36f49
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
 
-PODFILE CHECKSUM: 59d3fa79d40fd81e44f1338a71b4e3801fc1063b
+PODFILE CHECKSUM: a7affe90005f7b7ce0f981f3c0cec5404395d9c3
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1

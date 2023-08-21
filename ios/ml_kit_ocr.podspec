@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'ml_kit_ocr'
-  s.version          = '0.0.2'
+  s.version          = '0.0.4'
   s.summary          = 'Flutter Plugin for ML Kit ocr'
   s.description      = <<-DESC
 Flutter Plugin for ML Kit ocr.
@@ -15,9 +15,9 @@ Flutter Plugin for ML Kit ocr.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'GoogleMLKit/TextRecognition', '~> 2.2.0'
-  s.platform = :ios, '10.0'
-  s.ios.deployment_target = '10.0'
+  s.dependency 'GoogleMLKit/TextRecognition', '= 4.0.0'
+  s.platform = :ios, '12.0'
+  s.ios.deployment_target = '12.0'
   s.static_framework = true
 
   # Flutter.framework does not contain a i386 slice.
